@@ -120,7 +120,11 @@ int main()
     // User input for their requirements
     int user_price, user_distance;
     bool user_emergency, user_membership;
-    cout << "Enter your requirements:\n";
+    system("COLOR 46");
+    cout<<"\t\t\t\n"<<endl;
+    cout<<"\t\t\t\t\t ---- WELCOME TO BIKE RENTAL SYSTEM ----"<<endl;
+    cout<<"\t\t\t\t\t\t\n"<<endl;
+    cout << "ENTER YOUR REQUIREMENTS :\n";
     cout << "Price limit: ";
     cin >> user_price;
     cout << "Maximum distance: ";
@@ -134,7 +138,7 @@ int main()
     // Display the best matching rental
     if (best_match.cheapest_price != -1)
     {
-        cout << "Best matching rental:\n";
+        cout << "\nBEST MATCHING RENTAL :\n";
         cout << "Cheapest price: " << best_match.cheapest_price << endl;
         cout << "Distance: " << best_match.distance << endl;
         cout << "Emergency available: " << (best_match.emergency ? "Yes" : "No") << endl;
